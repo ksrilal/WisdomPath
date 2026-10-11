@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 export const metadata: Metadata = {
  title: "WisdomPath — Understand. Reflect. Live kindly.",
@@ -16,4 +17,4 @@ export const metadata: Metadata = {
  appleWebApp: {capable:true,title:"WisdomPath",statusBarStyle:"default"},
  robots: {index:true,follow:true}
 };
-export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) { return <html lang="en" suppressHydrationWarning><body>{children}</body></html>; }
+export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) { return <html lang="en" suppressHydrationWarning><body>{children}<Analytics /></body></html>; }
