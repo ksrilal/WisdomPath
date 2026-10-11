@@ -106,3 +106,5 @@
 .sermon-actions{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .sermon-reader .annotation{margin-top:22px}
 @media(max-width:600px){.sermon-reader{padding:18px}.sermon-reader h2{font-size:25px}.sermon-actions{align-items:flex-start;flex-direction:column}.sermon-video{border-radius:10px}.reader-tabs button{white-space:normal}}
+
+.brand-app-icon{display:block;border-radius:10px;flex-shrink:0}.footer-brand .brand-app-icon{border-radius:8px}

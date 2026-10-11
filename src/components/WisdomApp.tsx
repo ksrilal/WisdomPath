@@ -13,7 +13,7 @@ const empty:Saved={completed:[],bookmarks:[],entries:[],reviews:{}};
 const tabs=["home","learn","map","cards","practice","journal","sources","science"] as const;
 type Tab=typeof tabs[number]|"lesson"|"sutta";
 const names:Record<string,Localized>={home:{en:"Today",si:"අද"},learn:{en:"Learn",si:"ඉගෙන ගන්න"},map:{en:"Wisdom map",si:"ප්‍රඥා සිතියම"},cards:{en:"Flashcards",si:"මතක කාඩ්පත්"},practice:{en:"Practise",si:"පුහුණු වන්න"},journal:{en:"Reflect",si:"ආවර්ජනය"},sources:{en:"Sources",si:"මූලාශ්‍ර"},science:{en:"Wisdom & science",si:"ප්‍රඥාව සහ විද්‍යාව"}};
-function Emblem({small=false}:{small?:boolean}){return <svg width={small?34:42} height={small?34:42} viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 40V21M24 29C10 30 8 18 10 10c9 0 15 7 14 19ZM24 24C24 12 34 8 40 9c1 10-6 17-16 15Z" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/><path d="M10 40h28" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>}
+function Emblem({small=false}:{small?:boolean}){return <Image className="brand-app-icon" src="/icons/wisdompath-192.png" alt="" aria-hidden="true" width={small?34:42} height={small?34:42}/>}
 function BuddhaArtwork({variant,className="",priority=false}:{variant:"ivory"|"gold"|"forest";className?:string;priority?:boolean}){return <div className={"buddha-artwork buddha-"+variant+" "+className} aria-hidden="true"><Image src={"/images/buddha-"+variant+".webp"} alt="" width={1254} height={1254} sizes={priority?"(max-width: 700px) 80vw, 440px":"(max-width: 700px) 160px, 220px"} priority={priority}/></div>}
 export default function WisdomApp({locale:raw}:{locale:string}){
 const locale=raw as Locale;
