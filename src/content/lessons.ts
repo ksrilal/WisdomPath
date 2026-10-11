@@ -14,24 +14,24 @@ export const lessons:Lesson[]=[
       "si": "දක්ෂ වන්න"
     },
     "subtitle": {
-      "en": "Build the skills needed for wholesome action.",
-      "si": "යහපත් ක්‍රියාවකට අවශ්‍ය හැකියාව වඩන්න."
+      "en": "Develop the abilities to carry a task through from beginning to end.",
+      "si": "කටයුත්තක් මුල සිට අවසානය දක්වා නිම කිරීමට අවශ්‍ය හැකියාවන් වඩන්න."
     },
     "meaning": {
-      "en": "Capability means preparing to act well, rather than relying on good intentions alone.",
-      "si": "හොඳ චේතනාව පමණක් නොව එය ක්‍රියාවට නැංවීමට අවශ්‍ය හැකියාව සකස් කිරීම මෙහි අදහසයි."
+      "en": "Capability means preparing to act well, rather than relying on good intentions alone. In everyday life, develop the range of abilities needed to carry a task through from beginning to end. Knowing one or two parts is not enough to complete the whole task. Practical knowledge, sound judgement, and experience help you meet your needs, take responsibility, and become more independent.",
+      "si": "හොඳ චේතනාව පමණක් නොව එය ක්‍රියාවට නැංවීමට අවශ්‍ය හැකියාව සකස් කිරීම මෙහි අදහසයි. එදිනෙදා ජීවිතයේදී කටයුත්තක් මුල සිට අවසානය දක්වා නිම කිරීමට අවශ්‍ය හැකියාවන් වඩන්න. එහි පියවර එකක් දෙකක් දැන සිටීමෙන් පමණක් මුළු කටයුත්ත නිම කළ නොහැකිය. ප්‍රායෝගික දැනුම, නුවණින් තීරණ ගැනීම සහ අත්දැකීම් තුළින් තම අවශ්‍යතා සපුරා ගැනීමටත්, වගකීම් දැරීමටත්, වඩා ස්වාධීනව ජීවත් වීමටත් හැකි වේ."
     },
     "scenario": {
-      "en": "You want to help a friend, but have not understood what they need.",
-      "si": "මිතුරෙකුට උපකාර කරන්න කැමති වුවත් ඔහුට අවශ්‍ය දේ ඔබ තවම දන්නේ නැත."
+      "en": "Think of a carpenter making a finished piece of furniture. The work runs from cutting the tree and preparing suitable timber through planning, measuring, cutting, shaping, joining, sanding, and polishing the finished product. Skill in cutting alone does not finish the furniture; the carpenter needs to understand and carry out the whole process. Apply the same idea to life: develop the connected skills needed to prepare meals, manage money, maintain your home, or earn a living, so unfamiliar tasks leave you less helpless.",
+      "si": "ගෘහ භාණ්ඩයක් නිම කරන වඩුවෙකු ගැන සිතන්න. ගස කැපීම හා සුදුසු දැව සකස් කිරීමේ සිට සැලසුම් කිරීම, මැනීම, කැපීම, හැඩගැන්වීම, කොටස් සම්බන්ධ කිරීම, වැලි කඩදාසියෙන් සුමට කිරීම සහ අවසාන භාණ්ඩය ඔප දැමීම දක්වා පියවර රැසක් ඇත. කැපීමට පමණක් දක්ෂ වීමෙන් භාණ්ඩය නිම නොවේ; මුළු ක්‍රියාවලියම තේරුම් ගෙන ඉටු කිරීමට හැකියාව අවශ්‍යයි. ජීවිතයටත් මෙය යොදන්න: ආහාර පිළියෙල කිරීම, මුදල් කළමනාකරණය, නිවස නඩත්තු කිරීම හෝ ජීවනෝපායක් සලසා ගැනීම සඳහා එකිනෙකට බැඳුණු හැකියාවන් වඩන්න. එවිට නුහුරු කටයුත්තක් හමුවේ අසරණ වීම අඩු වේ."
     },
     "practice": {
-      "en": "Ask what help is needed. Choose one skill to improve and practise it for five minutes.",
-      "si": "අවශ්‍ය උපකාරය කුමක්දැයි අසන්න. වැඩිදියුණු කළ යුතු එක් හැකියාවක් තෝරා විනාඩි පහක් පුහුණු වන්න."
+      "en": "Choose one everyday responsibility you want to handle more independently. List the whole process: what you need to know, prepare, do, and check to reach a finished result. Identify gaps across that process and make a learning plan for them. Begin practising a missing step today, then keep building the connected abilities until you can complete the task.",
+      "si": "වඩා ස්වාධීනව ඉටු කිරීමට කැමති එදිනෙදා වගකීමක් තෝරන්න. නිම වූ ප්‍රතිඵලයකට පැමිණීමට දැනගත යුතු දේ, සූදානම් කළ යුතු දේ, කළ යුතු දේ සහ පරීක්ෂා කළ යුතු දේ ඇතුළුව මුළු ක්‍රියාවලිය ලියන්න. එහි ඔබට අඩු හැකියාවන් හඳුනාගෙන ඒවා ඉගෙනීමට සැලැස්මක් සකස් කරන්න. අද එක් නොදන්නා පියවරක් පුහුණු කිරීම අරඹා, කටයුත්ත සම්පූර්ණ කළ හැකි වන තෙක් එකිනෙකට බැඳුණු හැකියාවන් වඩන්න."
     },
     "question": {
-      "en": "What ability would make my good intention useful?",
-      "si": "මගේ යහපත් අදහස ප්‍රයෝජනවත් කරන්නේ කුමන හැකියාවද?"
+      "en": "Which responsibility do I feel helpless with, and what full set of abilities would help me carry it through independently?",
+      "si": "කුමන වගකීමක් හමුවේ මට අසරණ බවක් දැනේද? එය ස්වාධීනව නිම කිරීමට මට අවශ්‍ය සම්පූර්ණ හැකියාවන් මොනවාද?"
     },
     "minutes": 5
   },
