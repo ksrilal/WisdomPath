@@ -52,20 +52,20 @@ export const lessons:Lesson[]=[
       "si": "කරුණු සමඟ ගැළපෙන ලෙස කතා කරන්න."
     },
     "meaning": {
-      "en": "Uprightness asks for honesty in what we say and do.",
-      "si": "සෘජු බව යනු කීමේදීත් කිරීමේදීත් අවංකව සිටීමයි."
+      "en": "Uprightness means honesty in speech and conduct. In everyday life, build the habit of giving accurate information, making promises you can keep, acknowledging mistakes, and repairing their effects. Trust grows when your words and actions consistently agree.",
+      "si": "සෘජු බව යනු කීමේදීත් කිරීමේදීත් අවංකව සිටීමයි. එදිනෙදා ජීවිතයේදී නිවැරදි තොරතුරු දීම, ඉටු කළ හැකි පොරොන්දු දීම, වැරදි පිළිගැනීම සහ ඒවායේ ප්‍රතිඵල නිවැරදි කිරීම පුරුදු කරන්න. ඔබේ වචන සහ ක්‍රියා නිරතුරුව ගැළපෙන විට විශ්වාසය ගොඩනැඟේ."
     },
     "scenario": {
-      "en": "You missed a deadline and are tempted to invent an excuse.",
-      "si": "කාලසීමාව මඟහැරී ඇත. බොරු හේතුවක් කියන්නට සිතේ."
+      "en": "You promised to finish a repair by Friday, but it is still incomplete. Honesty involves explaining the actual progress, accepting responsibility for the delay, agreeing on a realistic completion date, and following through. A truthful explanation is only the beginning of reliable conduct.",
+      "si": "සිකුරාදා වන විට අලුත්වැඩියාවක් නිම කරන බව පොරොන්දු වූවත් එය තවම අවසන් නැත. අවංකව කටයුතු කිරීමේදී සැබෑ ප්‍රගතිය පැහැදිලි කර, ප්‍රමාදයේ තම වගකීම පිළිගෙන, ඉටු කළ හැකි අවසන් දිනයක් එකඟ වී එය ඉටු කරන්න. සැබෑ හේතුව කීම විශ්වාසවන්ත හැසිරීමේ ආරම්භය පමණි."
     },
     "practice": {
-      "en": "State what happened without exaggeration. Accept your part and offer a realistic repair.",
-      "si": "අතිශයෝක්තියෙන් තොරව සිදු වූ දේ කියන්න. ඔබේ වගකීම පිළිගෙන කළ හැකි විසඳුමක් යෝජනා කරන්න."
+      "en": "Review one promise or responsibility. Check the facts, explain any gap honestly, agree on the next step, and complete it. At the end of the day, compare what you said with what you did. Practise this across work, money, and relationships.",
+      "si": "එක් පොරොන්දුවක් හෝ වගකීමක් විමසන්න. කරුණු පරීක්ෂා කර, ඇති අඩුව අවංකව පැහැදිලි කර, ඊළඟ පියවර එකඟ වී එය ඉටු කරන්න. දවස අවසානයේ කී දේ සහ කළ දේ සසඳන්න. රැකියාව, මුදල් සහ සබඳතා තුළ මෙය පුරුදු කරන්න."
     },
     "question": {
-      "en": "Where can I replace an excuse with honesty?",
-      "si": "හේතුවක් ගොතා කීම වෙනුවට මට අවංක විය හැක්කේ කොතැනදීද?"
+      "en": "Where do my words and actions differ, and how can I bring them into agreement?",
+      "si": "මගේ වචන සහ ක්‍රියා වෙනස් වන්නේ කොතැනදීද? ඒවා ගළපාගන්නේ කෙසේද?"
     },
     "minutes": 5
   },
@@ -86,20 +86,20 @@ export const lessons:Lesson[]=[
       "si": "කිසිවෙකු නොබලන විටත් අවංකකම රකින්න."
     },
     "meaning": {
-      "en": "The added emphasis invites consistency: public and private conduct should agree.",
-      "si": "තවත් අවංක වීම යනු අන් අය ඉදිරියේත් තනිව සිටින විටත් එක සේ යහපත්ව ක්‍රියා කිරීමයි."
+      "en": "Thorough uprightness deepens honesty into sincerity. Examine the intention behind your conduct as well as its outward appearance. In everyday life, this means avoiding hidden exceptions that benefit you, being honest with yourself, and maintaining your values when no one is watching.",
+      "si": "ඉතා අවංක බව අවංකකම හෘදයාංගම බව දක්වා ගැඹුරු කරයි. පෙනෙන හැසිරීම මෙන්ම එයට යටින් ඇති චේතනාවත් විමසන්න. එදිනෙදා ජීවිතයේදී තම වාසිය සඳහා රහසිගත ව්‍යතිරේක නොකිරීම, තමාටම අවංක වීම සහ කිසිවෙකු නොබලන විටත් තම වටිනාකම් රැකීම මෙයට යෙදිය හැකිය."
     },
     "scenario": {
-      "en": "A small error benefits you, and nobody has noticed it.",
-      "si": "කුඩා වරදකින් ඔබට වාසියක් ලැබී ඇත. කිසිවෙකු එය දැක නැත."
+      "en": "A shop gives you too much change and nobody notices. You can return it while also noticing the thought that you deserve the extra money. The same sincerity matters when reporting your effort, admitting uncertainty, or accepting credit for someone else's work.",
+      "si": "වෙළඳසැලකින් වැඩිපුර ඉතිරි මුදල් ලැබී ඇති අතර කිසිවෙකු එය දැක නැත. එය ආපසු දෙන අතරම වැඩිපුර මුදල තමාට ලැබිය යුතුයැයි ඇතිවන සිතුවිල්ලත් හඳුනාගන්න. තම උත්සාහය වාර්තා කිරීමේදී, නොදන්නා දේ පිළිගැනීමේදී හෝ අනෙකාගේ වැඩ සඳහා ගෞරවය ලබාගැනීමේදීත් එම හෘදයාංගම බව වැදගත්ය."
     },
     "practice": {
-      "en": "Correct the error and tell the person affected. Notice any wish to hide it.",
-      "si": "වරද නිවැරදි කර අදාළ අයට කියන්න. එය සඟවන්නට ඇති කැමැත්ත නිරීක්ෂණය කරන්න."
+      "en": "Choose a decision that others cannot easily check. Notice your motive, apply the same standard you would expect of someone else, and correct any unfair benefit. Reflect afterward on whether you were sincere with yourself as well as truthful to others.",
+      "si": "අන් අයට පහසුවෙන් පරීක්ෂා කළ නොහැකි තීරණයක් තෝරන්න. තම චේතනාව හඳුනාගෙන, අන් අයගෙන් බලාපොරොත්තු වන ප්‍රමිතියම තමාටත් යොදන්න. අසාධාරණ වාසියක් තිබේ නම් නිවැරදි කරන්න. අනුන්ට සත්‍යය කීම මෙන්ම තමාටම හෘදයාංගම වූවාදැයි පසුව විමසන්න."
     },
     "question": {
-      "en": "Do my private choices match my stated values?",
-      "si": "මගේ පෞද්ගලික තීරණ මම කියන වටිනාකම් සමඟ ගැළපේද?"
+      "en": "What would I change if I examined my motives as carefully as my visible actions?",
+      "si": "පෙනෙන ක්‍රියා තරම්ම තම චේතනාත් විමසා බැලුවහොත් මා වෙනස් කරන්නේ කුමක්ද?"
     },
     "minutes": 5
   },
@@ -120,20 +120,20 @@ export const lessons:Lesson[]=[
       "si": "ඔබව සාධාරණීකරණය කිරීමට පෙර හොඳින් සවන් දෙන්න."
     },
     "meaning": {
-      "en": "Being easy to advise supports learning and correction. Examine advice thoughtfully.",
-      "si": "අවවාද පිළිගත හැකි බව ඉගෙනීමට සහ නිවැරදි වීමට උපකාරී වේ. අවවාද නුවණින් විමසන්න."
+      "en": "Being receptive to guidance means being approachable when correction is needed. Develop the ability to listen without immediately defending yourself, understand the concern, assess the advice, and put sound guidance into practice. Receiving advice becomes useful when it leads to learning and correction.",
+      "si": "අවවාද පිළිගත හැකි බව යනු නිවැරදි කිරීමක් අවශ්‍ය විට ඔබට පහසුවෙන් කියා දිය හැකි වීමයි. වහාම තමන් සාධාරණීකරණය නොකර සවන් දීම, ගැටලුව තේරුම් ගැනීම, උපදෙස නුවණින් විමසීම සහ නිවැරදි මඟපෙන්වීම ක්‍රියාවට යෙදීම වඩන්න. අවවාදය ඉගෙනීමටත් නිවැරදි වීමටත් යොදාගන්නා විට එය ප්‍රයෝජනවත් වේ."
     },
     "scenario": {
-      "en": "Someone points out a mistake; your first impulse is to interrupt.",
-      "si": "කෙනෙක් වරදක් පෙන්වයි. ඔබට ඔහුගේ කතාව නවත්වන්නට සිතේ."
+      "en": "You are learning to cook and someone explains why the meal keeps burning. Listen to the explanation, ask them to show the right heat and timing, try again, and compare the result. Merely saying 'okay' while repeating the same method leaves the lesson unused.",
+      "si": "ඔබ ආහාර පිසීම ඉගෙනගන්නා අතර ආහාරය නිතර පිළිස්සෙන්නේ ඇයිදැයි කෙනෙකු පැහැදිලි කරයි. සවන් දී සුදුසු උෂ්ණත්වය සහ වේලාව පෙන්වන ලෙස අසන්න. නැවත උත්සාහ කර ප්‍රතිඵලය සසඳන්න. පෙර ක්‍රමයම නැවත කරමින් 'හරි' යැයි කීමෙන් පමණක් උපදෙස ප්‍රයෝජනයට නොගැනේ."
     },
     "practice": {
-      "en": "Listen fully, restate the concern, and ask for one concrete example. Use what is sound.",
-      "si": "සම්පූර්ණයෙන් සවන් දී අදහස නැවත කියන්න. එක් නිශ්චිත උදාහරණයක් අසා නිවැරදි දේ යොදාගන්න."
+      "en": "Recall a recent correction. Restate it fairly, ask about anything unclear, and decide what is useful. Try the change and seek feedback on the result. If the advice seems unsuitable, explain your concern respectfully and continue the conversation.",
+      "si": "මෑතකදී ලැබුණු නිවැරදි කිරීමක් සිහි කරන්න. එය සාධාරණව නැවත විස්තර කර, අපැහැදිලි දේ අසා, ප්‍රයෝජනවත් දේ තීරණය කරන්න. වෙනස උත්සාහ කර ප්‍රතිඵලය ගැන අදහස් ලබාගන්න. උපදෙස නුසුදුසු යැයි හැඟේ නම් තම ගැටලුව ගෞරවයෙන් පැහැදිලි කර සංවාදය දිගටම පවත්වාගන්න."
     },
     "question": {
-      "en": "What useful correction did I nearly miss?",
-      "si": "මට මඟහැරෙන්නට ගිය ප්‍රයෝජනවත් නිවැරදි කිරීම කුමක්ද?"
+      "en": "Do people find me easy to advise, and what have I actually changed after listening?",
+      "si": "මට අවවාද දීම අන් අයට පහසුද? සවන් දීමෙන් පසු මා සැබවින්ම වෙනස් කළේ කුමක්ද?"
     },
     "minutes": 5
   },
@@ -154,20 +154,20 @@ export const lessons:Lesson[]=[
       "si": "මෘදු ලෙසත් ස්ථිර අදහසකින් යුතුවත් ප්‍රතිචාර දක්වන්න."
     },
     "meaning": {
-      "en": "Gentleness concerns the manner of responding: avoid harshness while expressing what matters.",
-      "si": "මෘදු බව යනු වැදගත් දේ කියන අතර රළුකම අඩු කිරීමයි."
+      "en": "Gentleness includes a mild, flexible way of responding. In everyday life, develop patience with mistakes, a considerate tone, and a willingness to adjust your approach. A gentle response can still communicate a clear need or boundary while leaving room for understanding.",
+      "si": "මෘදු බවට සන්සුන් සහ නම්‍යශීලී ප්‍රතිචාරයක් ඇතුළත් වේ. එදිනෙදා ජීවිතයේදී වැරදි හමුවේ ඉවසීම, සැලකිලිමත් කතා විලාසය සහ තම ක්‍රමය වෙනස් කිරීමට ඇති කැමැත්ත වඩන්න. මෘදු ප්‍රතිචාරයකින්ද අවශ්‍යතාවක් හෝ සීමාවක් පැහැදිලිව කියමින් අවබෝධයට ඉඩ දිය හැකිය."
     },
     "scenario": {
-      "en": "A family member repeats a mistake and you feel your voice rising.",
-      "si": "පවුලේ කෙනෙක් නැවත වරදක් කරයි. ඔබේ හඬ උස්වන්නට යයි."
+      "en": "A family member forgets an important household task. Notice your frustration, ask what happened, explain the effect, and agree on a workable way to remember next time. Gentleness continues through the conversation and the follow-up, rather than ending with a quiet first sentence.",
+      "si": "පවුලේ කෙනෙකුට වැදගත් ගෙදර වැඩක් අමතක වී ඇත. තම කලකිරීම හඳුනාගෙන, සිදු වූ දේ අසා, එහි බලපෑම පැහැදිලි කර, ඊළඟ වතාවේ මතක තබාගැනීමට කළ හැකි ක්‍රමයක් එකඟ වන්න. පළමු වාක්‍යය නිහඬව කීමෙන් පමණක් මෘදු බව අවසන් නොවේ; සංවාදය සහ පසුව කටයුතු කරන ආකාරය පුරා එය පවත්වාගන්න."
     },
     "practice": {
-      "en": "Pause, lower your voice, and describe the issue without a personal insult.",
-      "si": "නවතින්න. හඬ පහත් කර පුද්ගලයාට අපහාස නොකර ගැටලුව විස්තර කරන්න."
+      "en": "Before a difficult conversation, settle your tone and choose words that describe the problem. Listen to the reply, state your need clearly, and adjust the plan together where possible. If you spoke harshly, acknowledge it and restart more gently.",
+      "si": "අපහසු සංවාදයකට පෙර හඬ සන්සුන් කර ගැටලුව විස්තර කරන වචන තෝරන්න. පිළිතුරට සවන් දී තම අවශ්‍යතාව පැහැදිලිව කියන්න. හැකි විට එක්ව සැලැස්ම සකස් කරන්න. රළු ලෙස කතා කළේ නම් එය පිළිගෙන වඩා මෘදුව නැවත අරඹන්න."
     },
     "question": {
-      "en": "Was my manner as gentle as my intention?",
-      "si": "මගේ කතා විලාසය මගේ යහපත් අදහස තරම් මෘදු වූවාද?"
+      "en": "How can I communicate what matters while keeping my manner gentle throughout?",
+      "si": "වැදගත් දේ කියන අතර මුළු සංවාදය පුරා මෘදු බව පවත්වාගන්නේ කෙසේද?"
     },
     "minutes": 5
   },
@@ -188,20 +188,20 @@ export const lessons:Lesson[]=[
       "si": "අනෙකාගේ දැනුමට ඉඩ දෙන්න."
     },
     "meaning": {
-      "en": "Freedom from excessive pride makes it easier to acknowledge limits and learn from others.",
-      "si": "අධික මානය අඩු කිරීම තම සීමා පිළිගැනීමටත් අනුන්ගෙන් ඉගෙනීමටත් උපකාරී වේ."
+      "en": "Freedom from excessive pride makes room for learning. Recognize your strengths and limitations without needing to place yourself above others. In everyday life, humility includes asking for help, admitting uncertainty, sharing credit, and accepting correction regardless of the other person's status.",
+      "si": "අධික මානයෙන් තොර වීම ඉගෙනීමට ඉඩ සලසයි. අන් අයට වඩා ඉහළින් සිටීමට උත්සාහ නොකර තම ශක්තීන් සහ සීමා හඳුනාගන්න. එදිනෙදා ජීවිතයේදී උපකාර ඉල්ලීම, නොදන්නා දේ පිළිගැනීම, ගෞරවය බෙදාදීම සහ අනෙකාගේ තරාතිරම නොසලකා නිවැරදි කිරීම පිළිගැනීම නිහතමානී බවට යෙදිය හැකිය."
     },
     "scenario": {
-      "en": "A younger colleague knows something you do not.",
-      "si": "තරුණ සගයෙකු ඔබ නොදන්නා දෙයක් දනී."
+      "en": "A newer colleague shows a better way to do something you have done for years. Let them explain, test the idea fairly, and credit their contribution. Your experience remains useful while their insight helps both of you improve.",
+      "si": "වසර ගණනක් ඔබ කළ කටයුත්තක් වඩා හොඳින් කරන ක්‍රමයක් නව සගයෙකු පෙන්වයි. පැහැදිලි කිරීමට ඉඩ දී, අදහස සාධාරණව පරීක්ෂා කර, ඔහුගේ දායකත්වයට ගෞරවය දෙන්න. ඔබේ අත්දැකීමද ප්‍රයෝජනවත් වන අතර ඔහුගේ අදහස දෙදෙනාටම දියුණු වීමට උපකාරී වේ."
     },
     "practice": {
-      "en": "Say 'I do not know yet.' Ask them to explain and thank them for their help.",
-      "si": "'මම තවම දන්නේ නැහැ' කියා පැහැදිලි කරන ලෙස අසන්න. උපකාරයට ස්තුති කරන්න."
+      "en": "Notice one moment when you want to prove your superiority. Ask what you can learn instead. Acknowledge a limit, invite another person's contribution, and give credit for useful help. Reflect on whether pride affected your decision.",
+      "si": "තම උසස් බව පෙන්වීමට කැමති වන එක් මොහොතක් හඳුනාගන්න. එහිදී ඉගෙනගත හැකි දේ විමසන්න. තම සීමාවක් පිළිගෙන, අනෙකාගේ දායකත්වයට ඉඩ දී, ප්‍රයෝජනවත් උපකාරයට ගෞරවය දෙන්න. තීරණයට මානය බලපෑවාදැයි විමසන්න."
     },
     "question": {
-      "en": "What did I learn after letting go of being right?",
-      "si": "හැමවිටම නිවැරදි වීමේ අවශ්‍යතාව අත්හැර මම ඉගෙනගත්තේ කුමක්ද?"
+      "en": "Where is the need to appear superior preventing me from learning or cooperating?",
+      "si": "උසස් ලෙස පෙනීමට ඇති අවශ්‍යතාව මගේ ඉගෙනීමට හෝ සහයෝගයට බාධා කරන්නේ කොතැනදීද?"
     },
     "minutes": 5
   },
@@ -222,20 +222,20 @@ export const lessons:Lesson[]=[
       "si": "තවත් සොයන්නට පෙර ඇති දේ ප්‍රමාණවත්දැයි බලන්න."
     },
     "meaning": {
-      "en": "Contentment invites gratitude and examination of unnecessary wanting.",
-      "si": "ලද දෙයින් සතුටු වීම කෘතඥතාව සහ අනවශ්‍ය ආශා විමසීම සඳහා ආරාධනා කරයි."
+      "en": "Contentment means being satisfied with what is available. In everyday life, learn to recognize sufficiency, appreciate what already serves you, and examine the urge for more. Make thoughtful improvements from genuine needs rather than letting comparison continually redefine what is enough.",
+      "si": "ලද දෙයින් සතුටු වීම යනු ලැබී ඇති දේ තුළ සෑහීමකට පත්වීමයි. එදිනෙදා ජීවිතයේදී ප්‍රමාණවත් බව හඳුනාගැනීම, දැනටමත් ප්‍රයෝජනවත් දේ අගය කිරීම සහ තවත් දේ ඉල්ලන ආශාව විමසීම ඉගෙනගන්න. සැසඳීම නිසා ප්‍රමාණවත් දේ නිතර වෙනස් කරගැනීම වෙනුවට සැබෑ අවශ්‍යතා අනුව නුවණින් දියුණු වන්න."
     },
     "scenario": {
-      "en": "Someone's new device makes your working device feel inadequate.",
-      "si": "අනෙකාගේ අලුත් උපකරණය නිසා හොඳින් වැඩ කරන ඔබේ එක මදි යැයි හැඟේ."
+      "en": "Your phone still meets your needs, but a friend's new model makes it feel inadequate. Check what you actually use it for, what works, and whether any limitation matters. You may keep it with appreciation or plan a necessary replacement without making ownership a measure of your worth.",
+      "si": "ඔබේ දුරකථනය තවම අවශ්‍යතා සපුරන නමුත් මිතුරෙකුගේ නව මාදිලිය නිසා එය මදි යැයි හැඟේ. ඔබ එය භාවිත කරන දේ, හොඳින් ක්‍රියා කරන දේ සහ සැබෑ අඩුවක් තිබේදැයි විමසන්න. ඇති දේ අගය කර තබාගැනීම හෝ අවශ්‍ය ආදේශයක් සැලසුම් කිරීම කළ හැකිය; භාණ්ඩ හිමිකමෙන් තම වටිනාකම මනින්නට අවශ්‍ය නැත."
     },
     "practice": {
-      "en": "List three needs already met. Wait a day before a nonessential purchase.",
-      "si": "දැනටමත් සපුරා ඇති අවශ්‍යතා තුනක් ලියන්න. අත්‍යවශ්‍ය නොවන මිලදී ගැනීමකට පෙර දවසක් නවතින්න."
+      "en": "Choose an area where you keep wanting more. List your genuine needs and how they are already met. Define what would be enough, pause before an optional upgrade, and care for what you have. Revisit the decision when the wish to compare has settled.",
+      "si": "තවත් දේ නිතර අවශ්‍ය වන එක් පැත්තක් තෝරන්න. සැබෑ අවශ්‍යතා සහ ඒවා දැනට සපුරන ආකාරය ලියන්න. ප්‍රමාණවත් දේ කුමක්දැයි තීරණය කර, අමතර දියුණු කිරීමකට පෙර නවතින්න. ඇති දේ රැකබලාගෙන, සැසඳීමේ ආශාව සන්සුන් වූ පසු තීරණය නැවත විමසන්න."
     },
     "question": {
-      "en": "What is enough for this particular need?",
-      "si": "මේ අවශ්‍යතාව සඳහා ප්‍රමාණවත් දේ කුමක්ද?"
+      "en": "Can I recognize enough while still meeting my real needs responsibly?",
+      "si": "සැබෑ අවශ්‍යතා වගකීමෙන් සපුරන අතර ප්‍රමාණවත් බව හඳුනාගත හැකිද?"
     },
     "minutes": 5
   },
@@ -256,20 +256,20 @@ export const lessons:Lesson[]=[
       "si": "ඔබට උදව් කරන අය මත අනවශ්‍ය ඉල්ලීම් අඩු කරන්න."
     },
     "meaning": {
-      "en": "Being easy to support asks us to consider the burdens our preferences place on others.",
-      "si": "පහසුවෙන් පෝෂණය කළ හැකි බව යනු තම කැමැත්ත නිසා අනුන්ට ඇතිවන බර සලකා බැලීමයි."
+      "en": "Being easy to support means being reasonably undemanding toward those who provide for you. In everyday life, distinguish genuine needs from avoidable preferences, communicate clearly, appreciate support, and share the work you can do. This develops consideration for the effort behind another person's help.",
+      "si": "පහසුවෙන් පෝෂණය කළ හැකි වීම යනු තමන්ට උපකාර කරන අයගෙන් අනවශ්‍ය ලෙස ඉල්ලීම් නොකිරීමයි. එදිනෙදා ජීවිතයේදී සැබෑ අවශ්‍යතා සහ අත්හැරිය හැකි කැමැත්ත වෙන්කර, පැහැදිලිව කියන්න. උපකාර අගය කර, කළ හැකි වැඩ බෙදාගන්න. එවිට අනෙකාගේ උපකාරයට යටින් ඇති උත්සාහය ගැන සැලකිල්ල වඩයි."
     },
     "scenario": {
-      "en": "A host offers a simple meal, but you want several special changes.",
-      "si": "සත්කාරකයා සරල ආහාරයක් දෙයි. ඔබට විශේෂ වෙනස්කම් කිහිපයක් අවශ්‍ය වේ."
+      "en": "A host prepares a simple meal. Explain any genuine dietary need in advance, accept the reasonable options, and help with serving or cleaning if you can. Consider the whole visit: time, transport, food, and cleanup, rather than expecting the host to manage every preference.",
+      "si": "සත්කාරකයෙකු සරල ආහාරයක් සකස් කරයි. සැබෑ ආහාර අවශ්‍යතාවක් තිබේ නම් කලින් කියා, සුදුසු විකල්ප පිළිගෙන, හැකි නම් බෙදීමට හෝ පිරිසිදු කිරීමට උදව් කරන්න. කාලය, ගමනාගමනය, ආහාර සහ පසුව වැඩ ඇතුළුව මුළු පැමිණීම ගැනම සලකා බලන්න. සෑම කැමැත්තක්ම සත්කාරකයා ඉටු කරනු ඇතැයි බලාපොරොත්තු නොවන්න."
     },
     "practice": {
-      "en": "Communicate genuine needs clearly, accept reasonable simplicity, and help with one task.",
-      "si": "සැබෑ අවශ්‍යතා පැහැදිලිව කියන්න. සුදුසු සරල බව පිළිගෙන එක් වැඩකට උදව් කරන්න."
+      "en": "Think of someone who regularly supports you. Identify the effort involved, communicate an essential need early, relax one optional demand, and take responsibility for a part you can manage. Thank them specifically for their contribution.",
+      "si": "ඔබට නිතර උපකාර කරන අයෙකු ගැන සිතන්න. එයට වැය වන උත්සාහය හඳුනාගෙන, අත්‍යවශ්‍ය දෙයක් කලින් කියන්න. එක් අමතර ඉල්ලීමක් ලිහිල් කර, තමාට කළ හැකි කොටසක වගකීම ගන්න. ඔහුගේ දායකත්වය සඳහන් කර ස්තුති කරන්න."
     },
     "question": {
-      "en": "Which preference could I relax to ease another person's burden?",
-      "si": "අනෙකාගේ බර අඩු කිරීමට මගේ කුමන කැමැත්ත ලිහිල් කළ හැකිද?"
+      "en": "How can I make support easier while communicating my genuine needs clearly?",
+      "si": "සැබෑ අවශ්‍යතා පැහැදිලිව කියමින් මට උපකාර කිරීම අනෙකාට පහසු කරන්නේ කෙසේද?"
     },
     "minutes": 5
   },
@@ -290,20 +290,20 @@ export const lessons:Lesson[]=[
       "si": "වැළැක්විය හැකි කාර්යබහුල බව අඩු කර ඉඩ සලසන්න."
     },
     "meaning": {
-      "en": "Few duties points toward reducing unnecessary activity so there is room for cultivation.",
-      "si": "අඩු කටයුතු ඇති බව යනු අනවශ්‍ය වැඩ අඩු කර පුහුණුව සඳහා ඉඩ සලසා ගැනීමයි."
+      "en": "Having few duties makes room for cultivation by limiting unnecessary commitments. In everyday life, understand your responsibilities, choose priorities, and reduce activities that consume time without serving a worthwhile purpose. A simpler schedule gives attention to the duties you keep and leaves space for reflection and mettā.",
+      "si": "අඩු වැඩ කටයුතු ඇති වීම අනවශ්‍ය බැඳීම් සීමා කර පුහුණුවට ඉඩ සලසයි. එදිනෙදා ජීවිතයේදී තම වගකීම් තේරුම් ගෙන, ප්‍රමුඛතා තෝරා, වටිනා අරමුණකින් තොරව කාලය ගන්නා වැඩ අඩු කරන්න. සරල කාලසටහනකින් තබාගන්නා වගකීම්වලට අවධානයත් ආවර්ජනය සහ මෛත්‍රියට ඉඩත් ලැබේ."
     },
     "scenario": {
-      "en": "You accept every optional request and leave no quiet time.",
-      "si": "අමතර ඉල්ලීම් සියල්ල පිළිගැනීම නිසා නිහඬ මොහොතක් නැත."
+      "en": "You agree to every extra meeting, errand, and social plan, then rush through essential work and family responsibilities. Review the whole week, decide what matters, decline unnecessary additions respectfully, and arrange realistic time for what remains.",
+      "si": "සෑම අමතර රැස්වීමක්, ගමනක් සහ හමුවීමක්ම පිළිගෙන පසුව අත්‍යවශ්‍ය වැඩ සහ පවුලේ වගකීම් ඉක්මනින් නිම කිරීමට උත්සාහ කරයි. මුළු සතියම විමසා, වැදගත් දේ තෝරා, අනවශ්‍ය අමතර වැඩ ගෞරවයෙන් ප්‍රතික්ෂේප කරන්න. ඉතිරි වැඩ සඳහා ඉටු කළ හැකි කාලයක් වෙන් කරන්න."
     },
     "practice": {
-      "en": "Keep your responsibilities. Decline or defer one optional demand and reserve five quiet minutes.",
-      "si": "වගකීම් ඉටු කරන්න. එක් අමතර ඉල්ලීමක් කල්දමා නිහඬ විනාඩි පහක් වෙන් කරන්න."
+      "en": "List your current commitments. Separate essential responsibilities from optional activity. Reduce, combine, or defer an optional task, communicate any change to those affected, and reserve a quiet period for practice. Review whether the simpler plan helped you fulfil your responsibilities.",
+      "si": "දැනට ඇති බැඳීම් ලියන්න. අත්‍යවශ්‍ය වගකීම් සහ අමතර වැඩ වෙන් කරන්න. එක් අමතර වැඩක් අඩු කර, එකතු කර හෝ කල්දමා, වෙනස අදාළ අයට දන්වන්න. පුහුණුවට නිහඬ කාලයක් වෙන් කර, සරල සැලැස්මෙන් වගකීම් ඉටු කිරීමට උපකාර වූවාදැයි විමසන්න."
     },
     "question": {
-      "en": "Which activity adds busyness without serving a worthwhile purpose?",
-      "si": "වටිනා අරමුණකින් තොරව කාර්යබහුල බව වැඩි කරන වැඩය කුමක්ද?"
+      "en": "Which commitments can I simplify so I can give proper attention to what matters?",
+      "si": "වැදගත් දේට නිසි අවධානය දීමට කුමන බැඳීම් සරල කළ හැකිද?"
     },
     "minutes": 5
   },
@@ -324,20 +324,20 @@ export const lessons:Lesson[]=[
       "si": "අනවශ්‍ය දේ සහ සංකීර්ණතා අඩු කරන්න."
     },
     "meaning": {
-      "en": "A light way of living supports simplicity in daily arrangements and material needs.",
-      "si": "සැහැල්ලු පැවැත්ම දෛනික සැලසුම් සහ ද්‍රව්‍යමය අවශ්‍යතා සරල කරගැනීමට උපකාරී වේ."
+      "en": "Living lightly concerns a simple, manageable way of life. In everyday life, consider what your possessions and arrangements require to buy, store, maintain, and carry. Keep useful things in good order and reduce needless complexity so daily living leaves room for worthwhile activity.",
+      "si": "සැහැල්ලු පැවැත්ම යනු සරල සහ පහසුවෙන් පවත්වාගත හැකි ජීවන රටාවකි. එදිනෙදා ජීවිතයේදී භාණ්ඩ සහ ජීවන සැලසුම් මිලදී ගැනීමට, තබාගැනීමට, නඩත්තු කිරීමට සහ රැගෙන යාමට අවශ්‍ය දේ සලකා බලන්න. ප්‍රයෝජනවත් දේ පිළිවෙළට තබා අනවශ්‍ය සංකීර්ණ බව අඩු කර වටිනා කටයුතු සඳහා ඉඩ සලසාගන්න."
     },
     "scenario": {
-      "en": "Your desk is full of unused things that make every task harder.",
-      "si": "භාවිත නොකරන දේවල් පිරුණු මේසය නිසා වැඩ අපහසු වී ඇත."
+      "en": "Your home contains unused purchases, duplicates, and things awaiting repair. Finding what you need becomes a daily struggle. Sort a small area, repair or retain what is useful, and pass on suitable surplus. Then change how you acquire things so the same burden does not return.",
+      "si": "නිවසේ භාවිත නොකරන මිලදී ගැනීම්, එකම දේ කිහිපයක් සහ අලුත්වැඩියා කිරීමට ඇති භාණ්ඩ පිරී ඇත. අවශ්‍ය දේ සෙවීම දිනපතා අපහසු වෙයි. කුඩා තැනක් වෙන්කර ප්‍රයෝජනවත් දේ අලුත්වැඩියා කර හෝ තබාගෙන, සුදුසු අතිරික්ත දේ බෙදාදෙන්න. එම බර නැවත නොඑන ලෙස අලුත් දේ ලබාගන්නා ආකාරයත් වෙනස් කරන්න."
     },
     "practice": {
-      "en": "Clear one small area. Keep what serves a purpose and give away one usable item you do not need.",
-      "si": "එක් කුඩා තැනක් පිළිවෙළ කරන්න. ප්‍රයෝජනවත් දේ තබා අනවශ්‍ය භාවිත කළ හැකි දෙයක් බෙදා දෙන්න."
+      "en": "Choose one part of daily life that feels heavy. Review what is necessary, what can be maintained, and what can be released. Simplify that area and set a habit for keeping it manageable. Before adding something new, consider its continuing demands as well as its immediate benefit.",
+      "si": "බරක් ලෙස දැනෙන දෛනික ජීවිතයේ එක් කොටසක් තෝරන්න. අවශ්‍ය දේ, නඩත්තු කළ හැකි දේ සහ අත්හැරිය හැකි දේ විමසන්න. එය සරල කර පහසුවෙන් පවත්වාගැනීමට පුරුද්දක් සකස් කරන්න. අලුත් දෙයක් එක් කිරීමට පෙර වහාම ලැබෙන වාසිය මෙන්ම දිගටම අවශ්‍ය වන වැඩත් සලකා බලන්න."
     },
     "question": {
-      "en": "What am I carrying that no longer helps?",
-      "si": "තවදුරටත් උපකාරී නොවන කුමන බරක් මම දරමින් සිටිමිද?"
+      "en": "What would make my daily arrangements simpler to maintain and easier to live with?",
+      "si": "දෛනික ජීවන සැලසුම් නඩත්තු කිරීමට සහ ඒ සමඟ ජීවත් වීමට පහසු කරන්නේ කුමක්ද?"
     },
     "minutes": 5
   },
@@ -358,20 +358,20 @@ export const lessons:Lesson[]=[
       "si": "උත්තේජනයකට පසුපස යන්නට පෙර එය දකින්න."
     },
     "meaning": {
-      "en": "Calm senses invites restraint in how sights, sounds, and other impressions shape our response.",
-      "si": "සන්සුන් ඉඳුරන් යනු දැකීම්, ඇසීම් සහ වෙනත් අරමුණු හමුවේ සංවරව ප්‍රතිචාර දැක්වීමයි."
+      "en": "Peaceful faculties involve restraint and steadiness when meeting sensory experience. In everyday life, learn to notice what you see, hear, or otherwise experience, recognize the reaction it brings, and choose your response with care. Practise staying attentive instead of following every attraction or irritation.",
+      "si": "සන්සුන් ඉඳුරන් යනු ඉන්ද්‍රිය අත්දැකීම් හමුවේ සංවර සහ ස්ථිර ලෙස සිටීමයි. එදිනෙදා ජීවිතයේදී දකින, අසන සහ අනෙකුත් අත්දැකීම් හඳුනාගෙන, ඒවා නිසා ඇතිවන ප්‍රතිචාරය දැක, සැලකිල්ලෙන් තම ප්‍රතිචාරය තෝරන්න. සෑම ආකර්ෂණයක් හෝ අමනාපයක් පසුපස යාම වෙනුවට අවධානය පවත්වාගැනීම පුහුණු කරන්න."
     },
     "scenario": {
-      "en": "A notification pulls you into scrolling during a conversation.",
-      "si": "කතාවක් අතර දැනුම්දීමක් ඔබව දුරකථනය බලන්නට යොමු කරයි."
+      "en": "While someone speaks, a phone alert catches your eye and another sound irritates you. Notice both pulls, keep listening, and decide when to attend to the phone. The same steadiness can be practised with tempting images, distracting sounds, and the urge to react immediately.",
+      "si": "කෙනෙකු කතා කරන අතර දුරකථන දැනුම්දීමක් ඇසට හසුවෙයි; තවත් ශබ්දයකින් අමනාපයක් ඇති වෙයි. පෙළඹීම් දෙකම හඳුනාගෙන, සවන් දීම පවත්වාගෙන, දුරකථනය බලන වේලාව තෝරන්න. ආකර්ෂණීය රූප, අවධානය බිඳින ශබ්ද සහ වහාම ප්‍රතිචාර දීමට ඇති ආශාව හමුවේත් මේ ස්ථිර බව පුහුණු කළ හැකිය."
     },
     "practice": {
-      "en": "Silence nonessential alerts for one conversation. Notice the urge and return to listening.",
-      "si": "එක් කතාවක් අතර අමතර දැනුම්දීම් නිහඬ කරන්න. ඇතිවන පෙළඹීම දැක නැවත සවන් දෙන්න."
+      "en": "Choose one ordinary activity for attentive practice. Reduce an avoidable distraction, notice each sensory pull and the feeling it brings, then return to the activity. When a response is needed, choose it deliberately. Review which conditions helped you remain steady.",
+      "si": "අවධානයෙන් පුහුණු කිරීමට සාමාන්‍ය කටයුත්තක් තෝරන්න. වළක්වාගත හැකි බාධාවක් අඩු කර, ඉන්ද්‍රිය පෙළඹීම සහ එයින් ඇතිවන හැඟීම හඳුනාගෙන නැවත කටයුත්තට යොමු වන්න. ප්‍රතිචාරයක් අවශ්‍ය විට සිතා තෝරන්න. ස්ථිරව සිටීමට උපකාර වූ තත්ත්වයන් පසුව විමසන්න."
     },
     "question": {
-      "en": "Which sensory pull repeatedly takes my attention away?",
-      "si": "නැවත නැවත මගේ අවධානය වෙනස් කරන අරමුණ කුමක්ද?"
+      "en": "Can I notice an attraction or irritation without letting it immediately direct my actions?",
+      "si": "ආකර්ෂණයක් හෝ අමනාපයක් වහාම මගේ ක්‍රියා මෙහෙයවීමට ඉඩ නොදී හඳුනාගත හැකිද?"
     },
     "minutes": 5
   },
@@ -392,20 +392,20 @@ export const lessons:Lesson[]=[
       "si": "අවස්ථාවට සුදුසු ප්‍රතිචාරය තෝරන්න."
     },
     "meaning": {
-      "en": "Discernment considers context, likely consequences, and what would be beneficial.",
-      "si": "නුවණින් කටයුතු කිරීම සන්දර්භය, ප්‍රතිඵල සහ යහපත සලකා බැලීමයි."
+      "en": "Discernment is practical wisdom in choosing how to act. In everyday life, understand the situation, distinguish facts from assumptions, consider likely consequences, and choose a fitting response. Learning continues when you check the result and revise your judgement where necessary.",
+      "si": "තැනට සුදුසු නුවණ යනු ක්‍රියා කරන ආකාරය තෝරාගැනීමේ ප්‍රායෝගික ප්‍රඥාවයි. එදිනෙදා ජීවිතයේදී තත්ත්වය තේරුම් ගෙන, කරුණු සහ උපකල්පන වෙන්කර, ඇතිවිය හැකි ප්‍රතිඵල සලකා, ගැළපෙන ප්‍රතිචාරයක් තෝරන්න. ප්‍රතිඵලය පරීක්ෂා කර අවශ්‍ය විට තම තීරණය සකස් කිරීමෙන් ඉගෙනීම දිගටම සිදු වේ."
     },
     "scenario": {
-      "en": "A true comment could embarrass someone if said in public.",
-      "si": "සැබෑ කරුණක් වුවත් ප්‍රසිද්ධියේ කීමෙන් කෙනෙකු අපහසු විය හැකිය."
+      "en": "You notice a mistake in a shared task. Before pointing it out publicly, check the facts, consider who needs to know, and decide whether a private conversation would resolve it better. Explain the issue at a suitable time, agree on a correction, and check that the problem is resolved.",
+      "si": "හවුල් කටයුත්තක වරදක් පෙනේ. ප්‍රසිද්ධියේ කියන්නට පෙර කරුණු පරීක්ෂා කර, දැනගත යුතු අය කවුදැයි විමසා, පෞද්ගලික සංවාදයකින් වඩා හොඳින් විසඳිය හැකිදැයි බලන්න. සුදුසු වේලාවක ගැටලුව පැහැදිලි කර, නිවැරදි කිරීමක් එකඟ වී, ගැටලුව විසඳී ඇතිදැයි පරීක්ෂා කරන්න."
     },
     "practice": {
-      "en": "Ask whether the words are true, useful, and timely. Choose a private conversation if appropriate.",
-      "si": "කියන දේ සැබෑද, ප්‍රයෝජනවත්ද, වේලාව සුදුසුදැයි බලන්න. අවශ්‍ය නම් පෞද්ගලිකව කතා කරන්න."
+      "en": "Take a current decision. Write what you know, what is uncertain, and who may be affected. Compare a few possible actions and their consequences. Choose a helpful response, carry it out, and reflect on what the outcome teaches you.",
+      "si": "දැනට ගත යුතු තීරණයක් තෝරන්න. දන්නා දේ, අවිනිශ්චිත දේ සහ බලපෑමට ලක්වන අය ලියන්න. කළ හැකි ක්‍රියා කිහිපයක් සහ ඒවායේ ප්‍රතිඵල සසඳන්න. උපකාරී ප්‍රතිචාරයක් තෝරා ඉටු කර, ප්‍රතිඵලයෙන් ඉගෙනගත හැකි දේ විමසන්න."
     },
     "question": {
-      "en": "What response fits this situation rather than my first impulse?",
-      "si": "මගේ මුල් පෙළඹීම වෙනුවට මේ අවස්ථාවට ගැළපෙන ප්‍රතිචාරය කුමක්ද?"
+      "en": "What response suits this situation, and how will I know whether it helped?",
+      "si": "මේ තත්ත්වයට ගැළපෙන ප්‍රතිචාරය කුමක්ද? එය උපකාරී වූ බව දැනගන්නේ කෙසේද?"
     },
     "minutes": 5
   },
@@ -426,20 +426,20 @@ export const lessons:Lesson[]=[
       "si": "ගෞරවනීය හැසිරීමෙන් අන් අයට ඉඩ දෙන්න."
     },
     "meaning": {
-      "en": "Courtesy and restraint reduce intrusive, rough, or inconsiderate behaviour.",
-      "si": "සංවර බව රළු, අතපෙවීම් සහ නොසැලකිලිමත් හැසිරීම් අඩු කරයි."
+      "en": "Courtesy and restraint mean avoiding overbearing or inconsiderate conduct. In everyday life, develop awareness of other people's time, space, belongings, and opportunity to speak. Respect is expressed through listening, asking permission, choosing a considerate manner, and accepting reasonable limits.",
+      "si": "අසංවර ගතිවලින් තොර බව යනු අධිපති ලෙස හෝ අන් අය ගැන නොසලකා හැසිරීමෙන් වැළකීමයි. එදිනෙදා ජීවිතයේදී අනෙකාගේ කාලය, ඉඩ, භාණ්ඩ සහ කතා කිරීමට ඇති අවස්ථාව ගැන අවබෝධය වඩන්න. සවන් දීම, අවසර ඉල්ලීම, සැලකිලිමත් හැසිරීම සහ සුදුසු සීමා පිළිගැනීම තුළින් ගෞරවය පෙන්වන්න."
     },
     "scenario": {
-      "en": "You interrupt repeatedly because you want your idea heard.",
-      "si": "ඔබේ අදහස කියන්නට අවශ්‍ය නිසා නැවත නැවත බාධා කරයි."
+      "en": "During a group discussion, you repeatedly interrupt because your idea feels urgent. Let others finish, ask for your turn, explain your view briefly, and invite responses. Courtesy also means keeping to the agreed time and acknowledging others' contributions afterward.",
+      "si": "කණ්ඩායම් සංවාදයකදී තම අදහස හදිසි යැයි හැඟෙන නිසා නැවත නැවත බාධා කරයි. අනෙකාට අවසන් කිරීමට ඉඩ දී, තම වාරය ඉල්ලා, අදහස කෙටියෙන් කියා, ප්‍රතිචාර සඳහා ඉඩ දෙන්න. එකඟ වූ කාලයට සීමා වීම සහ පසුව අනෙකාගේ දායකත්වය පිළිගැනීමත් ගෞරවයට ඇතුළත්ය."
     },
     "practice": {
-      "en": "Let the other person finish. Ask before offering advice and use a considerate tone.",
-      "si": "අනෙකාගේ කතාව අවසන් වනතුරු ඉන්න. උපදෙස් දීමට පෙර අසා සැලකිලිමත් හඬකින් කතා කරන්න."
+      "en": "Observe one interaction from beginning to end. Ask before entering another person's space or using their things, listen without interrupting, and make your request considerately. Notice whether you respect their answer. Repair any intrusion with a clear acknowledgement and changed behaviour.",
+      "si": "එක් ඇසුරක් මුල සිට අවසානය දක්වා නිරීක්ෂණය කරන්න. අනෙකාගේ ඉඩට පිවිසීමට හෝ භාණ්ඩ භාවිත කිරීමට පෙර අසා, බාධා නොකර සවන් දී, සැලකිල්ලෙන් ඉල්ලීම කරන්න. ඔහුගේ පිළිතුරට ගරු කරනවාදැයි බලන්න. අතපෙවීමක් සිදු වූයේ නම් එය පැහැදිලිව පිළිගෙන හැසිරීම වෙනස් කරන්න."
     },
     "question": {
-      "en": "Did I give others the space I would want for myself?",
-      "si": "මට අවශ්‍ය ඉඩම මම අන් අයට ලබා දුන්නාද?"
+      "en": "Am I leaving others enough space to speak, choose, and set their own limits?",
+      "si": "කතා කිරීමට, තෝරාගැනීමට සහ තම සීමා තැබීමට අන් අයට ප්‍රමාණවත් ඉඩ දෙන්නේද?"
     },
     "minutes": 5
   },
@@ -460,20 +460,20 @@ export const lessons:Lesson[]=[
       "si": "වාසි නොසොයා, ඇලීමෙන් තොරව සැලකිලිමත් වන්න."
     },
     "meaning": {
-      "en": "In its monastic setting, this concerns attachment to supporting families. Our daily application examines favour-seeking and dependence on approval.",
-      "si": "පැවිදි සන්දර්භයේ මෙය උපස්ථාන කරන කුලයන්ට ඇලීම ගැනයි. දෛනික යෙදීමේදී වාසි සෙවීම සහ අනුමැතියට ඇලීම විමසමු."
+      "en": "In its monastic setting, this concerns greed or attachment toward supporting families. In everyday life, examine how hoped-for benefits or approval influence your relationships. Develop gratitude without entitlement, consistent respect, and the ability to make fair decisions without courting someone's favour.",
+      "si": "පැවිදි සන්දර්භයේ මෙය උපස්ථාන කරන කුලයන් කෙරෙහි ලෝභය හෝ ඇලීම ගැනයි. එදිනෙදා ජීවිතයේදී බලාපොරොත්තු වන වාසි හෝ අනුමැතිය සබඳතාවලට බලපාන ආකාරය විමසන්න. අයිතියක් ලෙස නොසලකා කෘතඥ වීම, එකම ගෞරවය පවත්වාගැනීම සහ කෙනෙකුගේ ප්‍රසාදය දිනාගැනීමට උත්සාහ නොකර සාධාරණ තීරණ ගැනීම වඩන්න."
     },
     "scenario": {
-      "en": "You are unusually agreeable around someone who can offer you benefits.",
-      "si": "ඔබට වාසි ලබාදිය හැකි අයෙකු ඉදිරියේ ඔබ අසාමාන්‍ය ලෙස එකඟ වෙයි."
+      "en": "You give unusual attention to someone who may offer a promotion, while overlooking a person who cannot help your career. Notice the expectation behind that difference. Show ordinary respect to both, acknowledge help honestly, and make decisions without treating kindness as a bargain for rewards.",
+      "si": "උසස්වීමකට උපකාර කළ හැකි අයෙකුට විශේෂ අවධානය දෙන අතර රැකියාවට වාසියක් නොදෙන අයෙකු නොසලකා හරියි. එම වෙනසට යටින් ඇති බලාපොරොත්තුව හඳුනාගන්න. දෙදෙනාටම සාමාන්‍ය ගෞරවය දී, උපකාර අවංකව පිළිගෙන, කරුණාව ප්‍රතිලාභ සඳහා ගනුදෙනුවක් නොකර තීරණ ගන්න."
     },
     "practice": {
-      "en": "Offer the same basic respect to someone who can give you nothing. Notice expectations of reward.",
-      "si": "ඔබට කිසිවක් ලබාදිය නොහැකි අයෙකුටත් එකම මූලික ගෞරවය දෙන්න. ප්‍රතිලාභ බලාපොරොත්තු නිරීක්ෂණය කරන්න."
+      "en": "Compare how you treat someone influential and someone with little to offer you. Notice expectations of gifts, approval, or access. Offer a considerate action without asking for a return, express gratitude where appropriate, and check whether your fairness changes when no benefit arrives.",
+      "si": "බලපෑම් කළ හැකි අයෙකුට සහ ඔබට වාසියක් දිය නොහැකි අයෙකුට සලකන ආකාරය සසඳන්න. තෑගි, අනුමැතිය හෝ අවස්ථා බලාපොරොත්තු හඳුනාගන්න. ප්‍රතිලාභ නොඉල්ලා සැලකිලිමත් ක්‍රියාවක් කර, සුදුසු විට කෘතඥතාව දක්වන්න. වාසියක් නොලැබුණු විට සාධාරණ බව වෙනස් වේදැයි බලන්න."
     },
     "question": {
-      "en": "Is my care shaped by the benefit I hope to receive?",
-      "si": "මට ලැබෙන්නට ඇති වාසිය අනුව මගේ සැලකිල්ල වෙනස් වේද?"
+      "en": "Would I show the same respect if this person could offer me no benefit or approval?",
+      "si": "මේ අයගෙන් වාසියක් හෝ අනුමැතියක් නොලැබුණත් එකම ගෞරවය දක්වනවාද?"
     },
     "minutes": 5
   },
@@ -494,20 +494,20 @@ export const lessons:Lesson[]=[
       "si": "කුඩා සදාචාරමය තීරණත් සැලකිල්ලෙන් ගන්න."
     },
     "meaning": {
-      "en": "The fifteenth point rejects even slight wrongdoing that the wise would censure.",
-      "si": "පහළොස්වන කරුණ නුවණැත්තන් දොස් කියන ඉතා සුළු වරදක්වත් නොකිරීමයි."
+      "en": "The fifteenth quality asks us to avoid even slight wrongdoing that the wise would censure. In everyday life, pay attention to small dishonest, unfair, or harmful actions before they become familiar habits. Consider their effects, listen to sound criticism, and take responsibility for correction.",
+      "si": "පහළොස්වන ගුණය නුවණැත්තන් දොස් කියන ඉතා සුළු වරදක්වත් නොකිරීමයි. එදිනෙදා ජීවිතයේදී කුඩා වංක, අසාධාරණ හෝ හානිකර ක්‍රියා පුරුදු වීමට පෙර හඳුනාගන්න. ඒවායේ ප්‍රතිඵල සලකා, නිවැරදි විවේචනයට සවන් දී, නිවැරදි කිරීමේ වගකීම ගන්න."
     },
     "scenario": {
-      "en": "A small exaggeration seems harmless because everyone does it.",
-      "si": "හැමෝම කරන නිසා කුඩා අතිශයෝක්තියක් හානියක් නැතැයි සිතේ."
+      "en": "You add a little extra to a claim because you assume nobody will check. The amount is small, but another person bears the cost and the record becomes false. Check the claim, remove the exaggeration, correct any submission, and change the habit that made the shortcut seem acceptable.",
+      "si": "කිසිවෙකු පරීක්ෂා නොකරනු ඇතැයි සිතා ඉල්ලීමක මුදලට සුළු වැඩිපුර ප්‍රමාණයක් එක් කරයි. මුදල කුඩා වුවත් අනෙකා වියදම දරන අතර වාර්තාවද වැරදි වෙයි. ඉල්ලීම පරීක්ෂා කර, වැඩිපුර ප්‍රමාණය ඉවත් කර, යවා ඇති නම් නිවැරදි කරන්න. කෙටි මඟ සාධාරණ යැයි හැඟුණු පුරුද්දත් වෙනස් කරන්න."
     },
     "practice": {
-      "en": "Before acting, ask who might be harmed and whether a wise, fair person would approve. Correct one small wrong today.",
-      "si": "ක්‍රියාවට පෙර හානිය කාටදැයි සහ සාධාරණ නුවණැත්තෙකු එය අනුමත කරයිදැයි බලන්න. අද එක් කුඩා වරදක් නිවැරදි කරන්න."
+      "en": "Review one action you dismiss as a minor wrong. Ask who is affected and whether a thoughtful, fair person would object. Stop the action, correct the record or repair the effect where possible, and choose a practical safeguard against repeating it. Review your conduct again tomorrow.",
+      "si": "සුළු වරදක් යැයි නොසලකා හරින එක් ක්‍රියාවක් විමසන්න. බලපෑම කාටදැයි සහ විචාරශීලී සාධාරණ අයෙකු විරුද්ධ වෙයිදැයි බලන්න. ක්‍රියාව නවතා, හැකි විට වාර්තාව හෝ ප්‍රතිඵලය නිවැරදි කරන්න. නැවත නොකිරීමට ප්‍රායෝගික ක්‍රමයක් තෝරා හෙටත් තම හැසිරීම විමසන්න."
     },
     "question": {
-      "en": "Which small wrong have I been excusing?",
-      "si": "මම සාධාරණීකරණය කරමින් සිටි කුඩා වරද කුමක්ද?"
+      "en": "Which small wrong have I normalized, and what would a complete correction require?",
+      "si": "මම සාමාන්‍ය දෙයක් කරගත් කුඩා වරද කුමක්ද? එය සම්පූර්ණයෙන් නිවැරදි කිරීමට අවශ්‍ය දේ මොනවාද?"
     },
     "minutes": 5
   },
