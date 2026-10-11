@@ -53,10 +53,19 @@
 @media(max-width:700px){.point-map-groups,.practice-map-grid{grid-template-columns:1fr}.point-map-groups:before,.point-map-group:before{display:none}.point-map-heading{min-height:0}.point-map-groups{margin:22px 0}.point-map-group{padding:22px}.point-map-group li a{padding:14px}.map-practice-bridge{padding:22px}.map-practice-bridge h2{font-size:24px}.published-reader iframe{height:780px}.reader-tabs{flex-wrap:wrap}.verse-lessons a{font-size:13px}.guided-practice h2{font-size:24px}.guided-practice>p{font-size:17px}.lesson-neighbours{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){.point-map-group li a,.practice-map-grid>a{transition:none}.point-map-group li a:hover,.practice-map-grid>a:hover{transform:none}}
 
-/* Quiet Buddha profile behind the existing growing-wisdom illustration. */
-.hero-art{isolation:isolate}
-.buddha-line-art{position:absolute;inset:-5% -6% 0;width:112%;height:112%;color:var(--green);opacity:.25;pointer-events:none;z-index:-1;overflow:visible}
-:root[data-theme=dark] .buddha-line-art{opacity:.34}
-.hero-art .botanical{position:relative}
-.hero-art .art-label,.hero-art .art-caption{z-index:1}
-@media(max-width:600px){.buddha-line-art{opacity:.22}:root[data-theme=dark] .buddha-line-art{opacity:.3}}
+
+/* Generated Buddha artwork, with space for the teaching. */
+.buddha-artwork{overflow:hidden;border-radius:28px;flex-shrink:0}
+.buddha-artwork img{display:block;width:100%;height:auto;object-fit:contain}
+.buddha-hero{width:100%;max-width:440px;justify-self:center;animation:appear 1.2s ease-out}
+.buddha-ivory{background:#faf9f5}
+.buddha-gold{background:#faf9f5}
+.buddha-forest{background:#17221c}
+.illustrated-intro{display:flex;align-items:center;justify-content:space-between;gap:40px;margin-bottom:32px}
+.illustrated-intro .page-intro{margin-bottom:0;flex:1;min-width:0}
+.illustrated-intro .buddha-artwork{width:210px}
+.practice-art{text-align:left;gap:28px}
+.practice-art .buddha-artwork{width:180px}
+@media(max-width:900px){.buddha-hero{max-width:370px}.illustrated-intro{gap:24px}.illustrated-intro .buddha-artwork{width:170px}}
+@media(max-width:700px){.buddha-hero{max-width:320px}.illustrated-intro{flex-direction:column;align-items:flex-start;gap:20px}.illustrated-intro .buddha-artwork{width:150px;align-self:center}.practice-art{text-align:center;align-items:center}.practice-art .page-intro{width:100%}}
+@media(prefers-reduced-motion:reduce){.buddha-hero{animation:none}}
