@@ -95,3 +95,14 @@
 .science-daily>small{color:var(--muted);line-height:1.7}
 @media(max-width:900px){.science-video-section{gap:24px}.science-home{align-items:flex-start;flex-direction:column}}
 @media(max-width:700px){.science-video-section,.science-evidence{grid-template-columns:1fr}.science-lenses{gap:8px}.science-lenses button{flex-direction:column;gap:8px;padding:12px 6px;font-size:12px}.science-lens-panel,.science-daily,.science-evidence article,.science-home{padding:22px}.science-lens-panel{gap:14px}.science-page h2{font-size:29px}.science-page h3{font-size:23px}.science-block{margin-top:36px}.science-actions{align-items:stretch;flex-direction:column}.science-home>.button{white-space:normal}.library-tools{flex-wrap:wrap}}
+
+/* Language-specific sermons alongside the sutta reader. */
+.reader-tabs button{display:inline-flex;align-items:center;gap:8px}
+.sermon-reader{padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--paper)}
+.sermon-reader h2{font-size:30px;margin:14px 0 18px}
+.sermon-reader>p{color:var(--muted);line-height:1.85}
+.sermon-video{aspect-ratio:16/9;width:100%;overflow:hidden;border-radius:14px;background:#101912;margin:24px 0}
+.sermon-video iframe{display:block;border:0;width:100%;height:100%}
+.sermon-actions{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.sermon-reader .annotation{margin-top:22px}
+@media(max-width:600px){.sermon-reader{padding:18px}.sermon-reader h2{font-size:25px}.sermon-actions{align-items:flex-start;flex-direction:column}.sermon-video{border-radius:10px}.reader-tabs button{white-space:normal}}
