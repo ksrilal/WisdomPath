@@ -10,7 +10,7 @@ export const verses:Verse[]=[
     "section": "quality",
     "pali": {
       "en": "Karaṇīyamatthakusalena, yaṃ taṃ santaṃ padaṃ abhisamecca; sakko ujū ca sūjū ca, suvaco cassa mudu anatimānī.",
-      "si": "කරණීයමත්ථකුසලේන,\nයං තං සන්තං පදං අභිසමෙච්ච;\nසක්කෝ උජූ ච සූජූ ච,\nසුවචෝ චස්ස මුදු අනතිමානී."
+      "si": "කරණීයමත්ථකුසලේන,\nයං තං සන්තං පදං අභිසමෙච්ච;\nසක්කෝ උජූ ච සූජූ ච,\nසුවචෝ චස්ස මුදු අනතිමානි."
     },
     "translation": {
       "en": "One skilled in good wishing to attain that state of peace Nibbāna should act thus: he should be clever upright, exceedingly upright, obedient, gentle and humble.",
@@ -31,7 +31,7 @@ export const verses:Verse[]=[
     "section": "quality",
     "pali": {
       "en": "Santussako ca subharo ca, appakicco ca sallahukavutti; santindriyo ca nipako ca, appagabbho kulesu ananugiddho.",
-      "si": "සන්තුස්සකෝ ච සුභරෝ ච,\nඅප්පකිච්චෝ ච සල්ලහුකවුත්තී;\nසන්තින්ද්‍රියෝ ච නිපකෝ ච,\nඅප්පගබ්භෝ කුලේසු අනනුගිද්ධෝ."
+      "si": "සන්තුස්සකෝ ච සුභරෝ ච,\nඅප්පකිච්චෝ ච සල්ලහුකවුත්ති;\nසන්තින්ද්‍රියෝ ච නිපකෝ ච,\nඅප්පගබ්භෝ කුලේසු අනනුගිද්ධෝ."
     },
     "translation": {
       "en": "He should be content, easy to support, with few duties, living lightly, controlled in senses, discerning, courteous and unattached to families.",
@@ -86,7 +86,7 @@ export const verses:Verse[]=[
     "section": "practice",
     "pali": {
       "en": "Ye keci pāṇabhūtatthi, tasā vā thāvarā vā anavasesā; dīghā vā ye mahantā vā, majjhimā rassakā aṇukathūlā.",
-      "si": "යේ කේචි පාණභූතත්ථි,\nතසා වා ථාවරා වා අනවසේසා;\nදීඝා වා යේ මහන්තා වා,\nමජ්ඣිමා රස්සකා අණුකථූලා."
+      "si": "යේ කේචි පාණභූතත්ථි,\nතසා වා ථාවරා වා අනවසේසා;\nදීඝා වා යේ මහන්තා වා,\nමජ්ඣිමා රස්සකාණුකථූලා."
     },
     "translation": {
       "en": "Whatever living beings there may be without exception: timid or fearless; long or large, medium, short, subtle or gross,",
@@ -102,7 +102,7 @@ export const verses:Verse[]=[
     "section": "practice",
     "pali": {
       "en": "Diṭṭhā vā yeva adiṭṭhā, ye ca dūre vasanti avidūre; bhūtā vā sambhavesī vā, sabbe sattā bhavantu sukhitattā.",
-      "si": "දිට්ඨා වා යේව අද්දිට්ඨා,\nයේ ච දූරේ වසන්ති අවිදූරේ;\nභූතා වා සම්භවේසී වා,\nසබ්බේ සත්තා භවන්තු සුඛිතත්තා."
+      "si": "දිට්ඨා වා යේ ව අද්දිට්ඨා,\nයේ ච දූරේ වසන්ති අවිදූරේ;\nභූතා වා සම්භවේසී වා,\nසබ්බේ සත්තා භවන්තු සුඛිතත්තා."
     },
     "translation": {
       "en": "Visible or invisible, living near or far, born or coming to birth, may all beings have happy minds!",
@@ -117,8 +117,8 @@ export const verses:Verse[]=[
     "sourceNumber": 148,
     "section": "practice",
     "pali": {
-      "en": "Na paro paraṃ nikubbetha, nātimaññetha katthaci naṃ kiñci; byārosanā paṭighasaññā, nāññamaññassa dukkhamiccheyya.",
-      "si": "න පරෝ පරං නිකුබ්බේථ,\nනාතිමඤ්ඤේථ කත්ථචි නං කිඤ්චි;\nබ්‍යාරෝසනා පටිඝසඤ්ඤා,\nනාඤ්ඤමඤ්ඤස්ස දුක්ඛමිච්ඡෙය්‍ය."
+      "en": "Na paro paraṃ nikubbetha, nātimaññetha katthaci naṃ kañci; byārosanā paṭighasaññā, nāññamaññassa dukkhamiccheyya.",
+      "si": "න පරෝ පරං නිකුබ්බේථ,\nනාතිමඤ්ඤේථ කත්ථචි නං කඤ්චි;\nබ්‍යාරෝසනා පටිඝසඤ්ඤා,\nනාඤ්ඤමඤ්ඤස්ස දුක්ඛමිච්ඡෙය්‍ය."
     },
     "translation": {
       "en": "Let no one deceive another, nor despise anyone anywhere. Neither from anger nor ill will should anyone wish harm to another.",
@@ -150,7 +150,7 @@ export const verses:Verse[]=[
     "section": "practice",
     "pali": {
       "en": "Mettañca sabbalokasmiṃ, mānasaṃ bhāvaye aparimāṇaṃ; uddhaṃ adho ca tiriyañca, asambādhaṃ averaṃ asapattaṃ.",
-      "si": "මෙත්තං ච සබ්බලෝකස්මිං,\nමානසං භාවයේ අපරිමාණං;\nඋද්ධං අධෝ ච තිරියඤ්ච,\nඅසම්බාධං අවේරං අසපත්තං."
+      "si": "මෙත්තං ච සබ්බ ලෝකස්මිං,\nමානසං භාවයේ අපරිමාණං;\nඋද්ධං අධෝ ච තිරියඤ්ච,\nඅසම්බාධං අවේරං අසපත්තං."
     },
     "translation": {
       "en": "One should cultivate for all the world a heart of boundless loving-kindness, above, below, and all around, unobstructed, without hatred or resentment.",
@@ -166,7 +166,7 @@ export const verses:Verse[]=[
     "section": "practice",
     "pali": {
       "en": "Tiṭṭhaṃ caraṃ nisinno vā, sayāno vā yāvatassa vigatamiddho; etaṃ satiṃ adhiṭṭheyya, brahmametaṃ vihāramidhamāhu.",
-      "si": "තිට්ඨං චරං නිසින්නෝ වා,\nසයානෝ වා යාවතස්ස විගතමිද්ධෝ;\nඒතං සතිං අධිට්ඨෙය්‍ය,\nබ්‍රහ්මමේතං විහාරමිධමාහු."
+      "si": "තිට්ඨං චරං නිසින්නෝ වා,\nසයානෝ වා යාව තස්ස විගතමිද්ධෝ;\nඒතං සතිං අධිට්ඨෙය්‍ය,\nබ්‍රහ්මමේතං විහාරං ඉධමාහු."
     },
     "translation": {
       "en": "Whether standing, walking or sitting, lying down or whenever awake, one should develop this mindfulness. This is called “divinely dwelling here.”",
@@ -182,7 +182,7 @@ export const verses:Verse[]=[
     "section": "insight",
     "pali": {
       "en": "Diṭṭhiñca anupagamma, sīlavā dassanena sampanno; kāmesu vineyya gedhaṃ, na hi jātu gabbhaseyyaṃ punaretīti.",
-      "si": "දිට්ඨිඤ්ච අනුපගම්ම,\nසීලවා දස්සනේන සම්පන්නෝ;\nකාමේසු විනෙය්‍ය ගේධං,\nන හි ජාතු ගබ්භසෙය්‍යං පුනරේතීති."
+      "si": "දිට්ඨිං ච අනුපගම්ම,\nසීලවා දස්සනේන සම්පන්නෝ;\nකාමේසු විනෙය්‍ය ගේධං,\nන හි ජාතු ගබ්භසෙය්‍යං පුනරේතී ති."
     },
     "translation": {
       "en": "Not falling into wrong views, but virtuous and possessing right view, removing desire for sensual pleasures, one comes never again to birth in the womb.",

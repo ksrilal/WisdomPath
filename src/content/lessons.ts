@@ -178,7 +178,7 @@ export const lessons:Lesson[]=[
     "dimension": "reflect",
     "verse": "1",
     "pali": "Anatimānī",
-    "paliSinhala": "අනතිමානී",
+    "paliSinhala": "අනතිමානි",
     "title": {
       "en": "Be humble",
       "si": "අධික මානයෙන් තොර වන්න"
@@ -314,7 +314,7 @@ export const lessons:Lesson[]=[
     "dimension": "kindness",
     "verse": "2",
     "pali": "Sallahukavutti",
-    "paliSinhala": "සල්ලහුකවුත්තී",
+    "paliSinhala": "සල්ලහුකවුත්ති",
     "title": {
       "en": "Live lightly",
       "si": "සැහැල්ලු පැවැත්මක් ඇති වන්න"
@@ -654,7 +654,7 @@ export const lessons:Lesson[]=[
     "dimension": "kindness",
     "verse": "8",
     "pali": "Mettañca sabbalokasmiṃ",
-    "paliSinhala": "මෙත්තං ච සබ්බලෝකස්මිං",
+    "paliSinhala": "මෙත්තං ච සබ්බ ලෝකස්මිං",
     "title": {
       "en": "Extend goodwill in every direction",
       "si": "සෑම දිශාවකටම මෛත්‍රිය පතුරවන්න"
