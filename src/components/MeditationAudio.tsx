@@ -3,34 +3,86 @@ import {forwardRef,useEffect,useImperativeHandle,useRef,useState} from "react";
 import {Volume2,VolumeX} from "lucide-react";
 
 export type MeditationAudioHandle={start:()=>Promise<void>};
-const tracks=[
-  {id:"verclub",name:"Meditation Music · Verclub",file:"verclub_music-meditation-music-550885.mp3"},
-  {id:"atlas-deep",name:"Deep Meditation · Atlas Audio",file:"atlasaudio-deep-meditation-588149.mp3"},
-  {id:"leberch-1",name:"Meditation · Leberch",file:"leberch-meditation-578429.mp3"},
-  {id:"velario",name:"Meditation Music · Velario",file:"velariomusic-meditation-music-603880.mp3"},
-  {id:"atlas-calm",name:"Calmness Meditation · Atlas Audio",file:"atlasaudio-calmness-meditation-613486.mp3"},
-  {id:"marlowe",name:"Deep Meditation · Marlowe",file:"marlowemusic-deep-meditation-587561.mp3"},
-  {id:"leberch-2",name:"Meditation II · Leberch",file:"leberch-meditation-583077.mp3"}
+type Voice={osc:OscillatorNode;gain:GainNode};
+type Sound={context:AudioContext;master:GainNode;voices:Voice[];nodes:AudioNode[]};
+const presets=[
+  {id:"serenity",en:"Serenity · Warm ambient",si:"සන්සුන් බව · මෘදු ස්වර",notes:[130.81,164.81,196,261.63],breeze:0.07,speed:0.055},
+  {id:"deep",en:"Deep stillness · Low drone",si:"ගැඹුරු නිහඬතාව · පහත් ස්වර",notes:[65.41,98,130.81,196],breeze:0.10,speed:0.025},
+  {id:"lotus",en:"Lotus garden · Gentle harmony",si:"නෙළුම් උයන · මෘදු සුසංයෝගය",notes:[146.83,174.61,220,293.66],breeze:0.08,speed:0.065},
+  {id:"floating",en:"Floating light · Airy tones",si:"පාවෙන ආලෝකය · සැහැල්ලු ස්වර",notes:[174.61,220,261.63,349.23],breeze:0.05,speed:0.085},
+  {id:"calm",en:"Calm breath · Soft breeze",si:"සන්සුන් හුස්ම · මඳ සුළඟ",notes:[110,164.81,220,329.63],breeze:0.16,speed:0.04},
+  {id:"night",en:"Night meditation · Deep warmth",si:"රාත්‍රී භාවනාව · ගැඹුරු ස්වර",notes:[73.42,110,146.83,220],breeze:0.12,speed:0.035},
+  {id:"dawn",en:"Morning clarity · Bright calm",si:"උදෑසන පැහැදිලිකම · සන්සුන් ස්වර",notes:[164.81,196,246.94,329.63],breeze:0.06,speed:0.075}
 ];
+function buildSound(context:AudioContext,preset:typeof presets[number],master:GainNode):Sound{
+  const voices:Voice[]=[];const nodes:AudioNode[]=[];
+  const delay=context.createDelay(1),feedback=context.createGain(),wet=context.createGain();
+  delay.delayTime.value=0.42;feedback.gain.value=0.20;wet.gain.value=0.15;
+  delay.connect(feedback);feedback.connect(delay);delay.connect(wet);wet.connect(master);
+  nodes.push(delay,feedback,wet);
+  preset.notes.forEach((frequency,index)=>{
+    const osc=context.createOscillator(),gain=context.createGain();
+    osc.type=index===0?"sine":"triangle";osc.frequency.value=frequency;
+    gain.gain.value=0.0001;osc.connect(gain);gain.connect(master);gain.connect(delay);
+    const lfo=context.createOscillator(),depth=context.createGain();
+    lfo.type="sine";lfo.frequency.value=preset.speed*(1+index*0.19);
+    depth.gain.value=[0.018,0.012,0.009,0.006][index];
+    lfo.connect(depth);depth.connect(gain.gain);
+    const base=[0.16,0.085,0.055,0.028][index];
+    gain.gain.setTargetAtTime(base,context.currentTime,1.8);
+    osc.start();lfo.start();voices.push({osc,gain},{osc:lfo,gain:depth});nodes.push(gain,depth);
+  });
+  const buffer=context.createBuffer(1,context.sampleRate*3,context.sampleRate);
+  const data=buffer.getChannelData(0);
+  for(let i=0;i<data.length;i++)data[i]=(Math.random()*2-1)*0.12;
+  const noise=context.createBufferSource(),filter=context.createBiquadFilter(),noiseGain=context.createGain();
+  noise.buffer=buffer;noise.loop=true;filter.type="lowpass";filter.frequency.value=300;
+  noiseGain.gain.value=preset.breeze;noise.connect(filter);filter.connect(noiseGain);noiseGain.connect(master);noise.start();
+  voices.push({osc:noise as unknown as OscillatorNode,gain:noiseGain});nodes.push(filter,noiseGain);
+  return {context,master,voices,nodes};
+}
+function stopSound(sound:Sound){
+  sound.voices.forEach(({osc})=>{try{osc.stop();}catch{}osc.disconnect();});
+  sound.nodes.forEach(node=>node.disconnect());
+}
 const MeditationAudio=forwardRef<MeditationAudioHandle,{running:boolean;locale:"en"|"si"}>(function MeditationAudio({running,locale},ref){
-  const audio=useRef<HTMLAudioElement|null>(null);
-  const [track,setTrack]=useState(tracks[0].id),[muted,setMuted]=useState(false),[volume,setVolume]=useState(30),[available,setAvailable]=useState(true);
+  const sound=useRef<Sound|null>(null);
+  const [track,setTrack]=useState(presets[0].id),[muted,setMuted]=useState(false),[volume,setVolume]=useState(30),[available,setAvailable]=useState(true);
   const t=(en:string,si:string)=>locale==="si"?si:en;
   useImperativeHandle(ref,()=>({async start(){
-    const player=audio.current;if(!player)return;
-    try{await player.play();setAvailable(true);}catch{setAvailable(false);}
-  }}),[]);
-  useEffect(()=>{const player=audio.current;if(!player)return;player.volume=volume/100;player.muted=muted;},[volume,muted]);
-  useEffect(()=>{const player=audio.current;if(!player)return;if(!running)player.pause();},[running]);
-  useEffect(()=>{const player=audio.current;if(!player)return;player.load();setAvailable(true);if(running)void player.play().catch(()=>setAvailable(false));},[track]);
-  const selected=tracks.find(item=>item.id===track)??tracks[0];
+    try{
+      if(!sound.current){
+        const context=new AudioContext(),master=context.createGain();
+        master.gain.value=0;master.connect(context.destination);
+        sound.current=buildSound(context,presets.find(p=>p.id===track)??presets[0],master);
+      }
+      await sound.current.context.resume();
+      setAvailable(true);
+    }catch{setAvailable(false);}
+  }}),[track]);
+  useEffect(()=>{
+    const current=sound.current;if(!current)return;
+    const {context,master}=current;
+    if(!running){master.gain.setTargetAtTime(0,context.currentTime,0.12);return;}
+    master.gain.setTargetAtTime(muted?0:volume/100,context.currentTime,0.35);
+  },[running,muted,volume]);
+  useEffect(()=>{
+    const current=sound.current;if(!current)return;
+    const {context,master}=current;
+    master.gain.setTargetAtTime(0,context.currentTime,0.12);
+    const next=buildSound(context,presets.find(p=>p.id===track)??presets[0],master);
+    stopSound(current);sound.current=next;
+    master.gain.setTargetAtTime(running&&!muted?volume/100:0,context.currentTime+0.3,0.6);
+  // Only rebuild when the selected soundscape changes.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[track]);
+  useEffect(()=>()=>{const current=sound.current;sound.current=null;if(current){stopSound(current);void current.context.close().catch(()=>{});}},[]);
   return <div className="meditation-audio">
-    <audio ref={audio} src={"/audio/"+selected.file} loop preload="none" onError={()=>setAvailable(false)} onCanPlay={()=>setAvailable(true)}/>
-    <div className="meditation-audio-heading"><Volume2 size={18}/><strong>{t("Meditation audio","භාවනා හඬ")}</strong><span aria-live="polite">{!available?t("Audio unavailable · timer still works","හඬ ලබාගත නොහැක · වේලාව ක්‍රියා කරයි"):muted||volume===0?t("Muted","හඬ නිහඬයි"):running?t("Music playing","සංගීතය වාදනය වේ"):t("Starts with your practice","පුහුණුව සමඟ ඇරඹේ")}</span></div>
-    <label htmlFor="meditation-track">{t("Choose meditation music","භාවනා සංගීතය තෝරන්න")}</label>
-    <select id="meditation-track" value={track} onChange={event=>setTrack(event.target.value)}>{tracks.map(item=><option key={item.id} value={item.id}>{item.name}</option>)}</select>
+    <div className="meditation-audio-heading"><Volume2 size={18}/><strong>{t("Meditation audio","භාවනා හඬ")}</strong><span aria-live="polite">{!available?t("Audio unavailable · timer still works","හඬ ලබාගත නොහැක · වේලාව ක්‍රියා කරයි"):muted||volume===0?t("Muted","හඬ නිහඬයි"):running?t("Soundscape playing","පසුබිම් හඬ වාදනය වේ"):t("Starts with your practice","පුහුණුව සමඟ ඇරඹේ")}</span></div>
+    <label htmlFor="meditation-track">{t("Choose a soundscape","පසුබිම් හඬක් තෝරන්න")}</label>
+    <select id="meditation-track" value={track} onChange={event=>setTrack(event.target.value)}>{presets.map(item=><option key={item.id} value={item.id}>{locale==="si"?item.si:item.en}</option>)}</select>
     <div className="meditation-audio-controls"><button type="button" className="icon-button" aria-label={muted?t("Unmute meditation audio","භාවනා හඬ සක්‍රිය කරන්න"):t("Mute meditation audio","භාවනා හඬ නිහඬ කරන්න")} aria-pressed={muted} onClick={()=>setMuted(value=>!value)}>{muted||volume===0?<VolumeX size={20}/>:<Volume2 size={20}/>}</button><label htmlFor="meditation-volume">{t("Volume","හඬ මට්ටම")}</label><input id="meditation-volume" type="range" min="0" max="100" step="1" value={volume} onChange={event=>setVolume(Number(event.target.value))}/><output htmlFor="meditation-volume">{volume}%</output></div>
-    <p>{t("Choose a track to accompany your practice. Music loops until you pause or finish.","පුහුණුව සඳහා සංගීතයක් තෝරන්න. විරාමය දක්වා සංගීතය නැවත වාදනය වේ.")}</p>
+    <p>{t("Seven gently evolving ambient soundscapes generated in your browser. No audio downloads required.","බ්‍රවුසරය තුළ ජනනය වන මෘදු පසුබිම් හඬ හතක්. ශ්‍රව්‍ය ගොනු අවශ්‍ය නොවේ.")}</p>
   </div>;
 });
 export default MeditationAudio;
