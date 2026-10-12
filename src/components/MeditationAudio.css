@@ -1,0 +1,9 @@
+.soundscape-title{font-size:.88rem;font-weight:600;margin:16px 0 10px;color:inherit}
+.soundscape-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:9px;margin-bottom:18px}
+.soundscape-choice{appearance:none;display:flex;align-items:center;gap:9px;min-height:52px;text-align:left;padding:10px 12px;border-radius:12px;border:1px solid rgba(170,195,172,.24);background:rgba(132,160,138,.07);color:inherit;font:inherit;font-size:.82rem;cursor:pointer;transition:border-color .2s,background .2s,transform .2s}
+.soundscape-choice:hover{border-color:rgba(180,211,174,.65);background:rgba(158,190,160,.13);transform:translateY(-1px)}
+.soundscape-choice.selected{border-color:#b7d2a8;background:rgba(174,206,162,.18)}
+.soundscape-choice span{flex:1;line-height:1.35}
+.soundscape-check{flex-shrink:0;color:#b7d2a8}
+.soundscape-choice:focus-visible{outline:2px solid #c7dfb6;outline-offset:2px}
+@media(max-width:450px){.soundscape-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.soundscape-choice{padding:9px;font-size:.75rem}}
