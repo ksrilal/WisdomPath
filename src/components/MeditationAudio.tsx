@@ -1,6 +1,7 @@
 "use client";
 import {forwardRef,useEffect,useImperativeHandle,useRef,useState} from "react";
-import {Volume2,VolumeX} from "lucide-react";
+import {Volume2,VolumeX,Check,Music2,Bird,Droplets,CloudRain,Wind,Waves} from "lucide-react";
+import "./MeditationAudio.css";
 
 export type MeditationAudioHandle={start:()=>Promise<void>};
 type Voice={osc:OscillatorNode;gain:GainNode};
@@ -12,7 +13,12 @@ const presets=[
   {id:"floating",en:"Floating light · Airy tones",si:"පාවෙන ආලෝකය · සැහැල්ලු ස්වර",notes:[174.61,220,261.63,349.23],breeze:0.05,speed:0.085},
   {id:"calm",en:"Calm breath · Soft breeze",si:"සන්සුන් හුස්ම · මඳ සුළඟ",notes:[110,164.81,220,329.63],breeze:0.16,speed:0.04},
   {id:"night",en:"Night meditation · Deep warmth",si:"රාත්‍රී භාවනාව · ගැඹුරු ස්වර",notes:[73.42,110,146.83,220],breeze:0.12,speed:0.035},
-  {id:"dawn",en:"Morning clarity · Bright calm",si:"උදෑසන පැහැදිලිකම · සන්සුන් ස්වර",notes:[164.81,196,246.94,329.63],breeze:0.06,speed:0.075}
+  {id:"dawn",en:"Morning clarity · Bright calm",si:"උදෑසන පැහැදිලිකම · සන්සුන් ස්වර",notes:[164.81,196,246.94,329.63],breeze:0.06,speed:0.075},
+  {id:"birds",en:"Morning birds",si:"උදෑසන කුරුල්ලෝ",notes:[196,261.63,329.63,392],breeze:0.13,speed:0.065},
+  {id:"drops",en:"Water drops",si:"දිය බිඳු",notes:[130.81,196,261.63,329.63],breeze:0.11,speed:0.045},
+  {id:"stream",en:"Forest stream",si:"වනාන්තර දිය පහර",notes:[110,164.81,220,293.66],breeze:0.30,speed:0.04},
+  {id:"rain",en:"Gentle rain",si:"මෘදු වැස්ස",notes:[98,146.83,196,293.66],breeze:0.36,speed:0.03},
+  {id:"breeze",en:"Forest breeze",si:"වනාන්තර මඳ සුළඟ",notes:[130.81,164.81,196,261.63],breeze:0.26,speed:0.055}
 ];
 function buildSound(context:AudioContext,preset:typeof presets[number],master:GainNode):Sound{
   const voices:Voice[]=[];const nodes:AudioNode[]=[];
@@ -39,6 +45,35 @@ function buildSound(context:AudioContext,preset:typeof presets[number],master:Ga
   noise.buffer=buffer;noise.loop=true;filter.type="lowpass";filter.frequency.value=300;
   noiseGain.gain.value=preset.breeze;noise.connect(filter);filter.connect(noiseGain);noiseGain.connect(master);noise.start();
   voices.push({osc:noise as unknown as OscillatorNode,gain:noiseGain});nodes.push(filter,noiseGain);
+  // Naturalistic textures use browser synthesis, with no external audio assets.
+  const nature=["birds","drops","stream","rain","breeze"].includes(preset.id);
+  if(nature){
+    const water=preset.id==="stream"||preset.id==="rain";
+    filter.frequency.value=water?1800:preset.id==="breeze"?650:950;
+    noiseGain.gain.value=water?0.23:preset.id==="breeze"?0.16:0.08;
+    // Gentle fluctuations avoid a static white-noise sound.
+    const swell=context.createOscillator(),swellDepth=context.createGain();
+    swell.frequency.value=water?0.19:0.085;swellDepth.gain.value=water?0.075:0.035;
+    swell.connect(swellDepth);swellDepth.connect(noiseGain.gain);swell.start();
+    voices.push({osc:swell,gain:swellDepth});nodes.push(swellDepth);
+    if(preset.id==="birds"||preset.id==="drops"||preset.id==="stream"){
+      const count=preset.id==="birds"?3:2;
+      for(let i=0;i<count;i++){
+        const chirp=context.createOscillator(),tone=context.createGain(),pulse=context.createOscillator(),shape=context.createGain(),pitch=context.createOscillator(),bend=context.createGain();
+        chirp.type="sine";chirp.frequency.value=preset.id==="birds"?[880,1174,1568][i]:[740,988][i];
+        pulse.frequency.value=(preset.id==="birds"?0.42:0.72)+i*0.21;
+        shape.gain.value=preset.id==="birds"?0.018:0.026;
+        tone.gain.value=0.005;
+        pulse.connect(shape);shape.connect(tone.gain);
+        pitch.frequency.value=pulse.frequency.value; bend.gain.value=preset.id==="birds"?220:95;
+        pitch.connect(bend);bend.connect(chirp.frequency);
+        chirp.connect(tone);tone.connect(master);
+        chirp.start();pulse.start();pitch.start();
+        voices.push({osc:chirp,gain:tone},{osc:pulse,gain:shape},{osc:pitch,gain:bend});
+        nodes.push(tone,shape,bend);
+      }
+    }
+  }
   return {context,master,voices,nodes};
 }
 function stopSound(sound:Sound){
@@ -79,10 +114,10 @@ const MeditationAudio=forwardRef<MeditationAudioHandle,{running:boolean;locale:"
   useEffect(()=>()=>{const current=sound.current;sound.current=null;if(current){stopSound(current);void current.context.close().catch(()=>{});}},[]);
   return <div className="meditation-audio">
     <div className="meditation-audio-heading"><Volume2 size={18}/><strong>{t("Meditation audio","භාවනා හඬ")}</strong><span aria-live="polite">{!available?t("Audio unavailable · timer still works","හඬ ලබාගත නොහැක · වේලාව ක්‍රියා කරයි"):muted||volume===0?t("Muted","හඬ නිහඬයි"):running?t("Soundscape playing","පසුබිම් හඬ වාදනය වේ"):t("Starts with your practice","පුහුණුව සමඟ ඇරඹේ")}</span></div>
-    <label htmlFor="meditation-track">{t("Choose a soundscape","පසුබිම් හඬක් තෝරන්න")}</label>
-    <select id="meditation-track" value={track} onChange={event=>setTrack(event.target.value)}>{presets.map(item=><option key={item.id} value={item.id}>{locale==="si"?item.si:item.en}</option>)}</select>
+    <div className="soundscape-title">{t("Choose your soundscape","ඔබේ පසුබිම් හඬ තෝරන්න")}</div>
+    <div className="soundscape-grid" role="group" aria-label={t("Choose your soundscape","පසුබිම් හඬ තෝරන්න")}>{presets.map((item,index)=>{const Icon=index<7?Music2:item.id==="birds"?Bird:item.id==="drops"?Droplets:item.id==="rain"?CloudRain:item.id==="stream"?Waves:Wind;return <button type="button" key={item.id} className={"soundscape-choice"+(track===item.id?" selected":"")} aria-pressed={track===item.id} onClick={()=>setTrack(item.id)}><Icon size={18} strokeWidth={1.6}/><span>{locale==="si"?item.si:item.en}</span>{track===item.id&&<Check size={15} className="soundscape-check"/>}</button>;})}</div>
     <div className="meditation-audio-controls"><button type="button" className="icon-button" aria-label={muted?t("Unmute meditation audio","භාවනා හඬ සක්‍රිය කරන්න"):t("Mute meditation audio","භාවනා හඬ නිහඬ කරන්න")} aria-pressed={muted} onClick={()=>setMuted(value=>!value)}>{muted||volume===0?<VolumeX size={20}/>:<Volume2 size={20}/>}</button><label htmlFor="meditation-volume">{t("Volume","හඬ මට්ටම")}</label><input id="meditation-volume" type="range" min="0" max="100" step="1" value={volume} onChange={event=>setVolume(Number(event.target.value))}/><output htmlFor="meditation-volume">{volume}%</output></div>
-    <p>{t("Seven gently evolving ambient soundscapes generated in your browser. No audio downloads required.","බ්‍රවුසරය තුළ ජනනය වන මෘදු පසුබිම් හඬ හතක්. ශ්‍රව්‍ය ගොනු අවශ්‍ය නොවේ.")}</p>
+    <p>{t("Ambient music and nature-inspired sounds generated in your browser. No downloads required.","බ්‍රවුසරය තුළ ජනනය වන සංගීත සහ ස්වභාවික හඬ. බාගැනීම් අවශ්‍ය නොවේ.")}</p>
   </div>;
 });
 export default MeditationAudio;
